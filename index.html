@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <form class="card" id="form" autocomplete="off">
+    <div class="lock" id="lock">🔒</div>
+    <h1>ကို့ကို အဖြေပေးခဲ့တဲ့ နေ့လေးကို ထည့်ပါ baby</h1>
+    <input id="date" type="text" inputmode="numeric" placeholder="DD-MM-YYYY" maxlength="10" required />
+    <button type="submit">ဝင်မယ် 💌</button>
+    <p class="msg" id="msg"></p>
+  </form>
+
+  <script>
+    const form = document.getElementById("form");
+    const input = document.getElementById("date");
+    const msg = document.getElementById("msg");
+    const lock = document.getElementById("lock");
+
+    // Auto-insert dashes while typing: 26112019 -> 26-11-2019
+    input.addEventListener("input", () => {
+      let v = input.value.replace(/[^\d]/g, "").slice(0, 8);
+      if (v.length > 4) v = v.slice(0, 2) + "-" + v.slice(2, 4) + "-" + v.slice(4);
+      else if (v.length > 2) v = v.slice(0, 2) + "-" + v.slice(2);
+      input.value = v;
+    });
+
+    const wrong = [
+      "မှားနေတယ်နော်... ပြန်စဉ်းစားကြည့်ပါဦး 🥺",
+      "မဟုတ်သေးဘူး... မေ့သွားပြီလား 😢",
+      "အရိပ်အမြွက်: ၂၀၁၉ နိုဝင်ဘာလ 🍂",
+    ];
+    let tries = 0;
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const d = input.value.replace(/[^\d]/g, "");
+      if (d === "26112019") {
+        lock.textContent = "🔓";
+        lock.classList.add("unlock");
+        msg.textContent = "မှန်တယ် baby! ချစ်လိုက်တာ ❤️";
+        sessionStorage.setItem("ourDay", "ok");
+        setTimeout(() => (location.href = "love.html"), 1100);
+      } else {
+        msg.textContent = wrong[Math.min(tries, wrong.length - 1)];
+        tries++;
+        form.classList.remove("shake");
+        void form.offsetWidth;
+        form.classList.add("shake");
+      }
+    });
+
+  </script>
+<script src="floaty.js"></script>
+</body>
+</html>

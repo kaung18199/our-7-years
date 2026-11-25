@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>baby ကို ချစ်တယ် ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>" />
+  <script>
+    // Only open after answering the first-date question
+    if (sessionStorage.getItem("ourDay") !== "ok") location.replace("index.html");
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="love-page">
+
+  <!-- Hero: 3D heart -->
+  <header class="hero">
+    <div class="hero-text">
+      <span class="anniv" id="anniv" hidden></span>
+      <p class="eyebrow">for you, my love</p>
+      <h1>၇ နှစ်တာ အချိန်တိုင်းအတွက်<br>ကျေးဇူးပါနော်</h1>
+    </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </header>
+
+  <main>
+    <!-- Days together -->
+    <section class="reveal">
+      <h2>ကိုယ်တို့ အတူရှိခဲ့တာ</h2>
+      <div class="counter">
+        <div><b id="years">၀</b><small>နှစ်</small></div>
+        <div><b id="days">၀</b><small>ရက်</small></div>
+        <div><b id="hours">၀</b><small>နာရီ</small></div>
+        <div><b id="secs">၀</b><small>စက္ကန့်</small></div>
+      </div>
+      <p class="note">၂၀၁၉ ခုနှစ် နိုဝင်ဘာလ ၂၆ ရက်နေ့ ကစပြီး</p>
+    </section>
+
+    <!-- 3D photo ring -->
+    <section class="ring-section reveal">
+      <h2>ကိုယ်တို့ရဲ့ ကမ္ဘာလေး</h2>
+      <div class="stage" id="stage">
+        <div class="ring" id="ring">
+          <img src="images/1.jpg" alt=""><img src="images/2.jpg" alt=""><img src="images/3.jpg" alt="">
+          <img src="images/4.jpg" alt=""><img src="images/5.jpg" alt=""><img src="images/6.jpg" alt="">
+          <img src="images/7.jpg" alt=""><img src="images/8.jpg" alt=""><img src="images/9.jpg" alt="">
+        </div>
+      </div>
+      <p class="note">ဘယ်ညာ ဆွဲလှည့်ကြည့်ပါ</p>
+    </section>
+
+    <!-- How much -->
+    <section class="reveal">
+      <h2>ကျေးဇူးတင်ပါတယ် baby</h2>
+      <ul class="lines">
+        <li>ကို့ဘေးမှာ အမြဲ ရှိနေပေးလို့ ကျေးဇူးပါ</li>
+        <li>ကို့ကို ဒီလောက် ချစ်ပေးလို့ ကျေးဇူးပါ</li>
+        <li>ကို့အတွက် အချိန်တွေ ပေးခဲ့လို့ ကျေးဇူးပါ</li>
+        <li>ကို ပင်ပန်းတဲ့ အချိန်တွေမှာ လက်မလွှတ်ခဲ့လို့ ကျေးဇူးပါ</li>
+        <li>ကို့ကို နားလည်ပေး၊ စောင့်ပေးခဲ့လို့ ကျေးဇူးပါ</li>
+        <li>ကို့ဘဝထဲကို ရောက်လာပေးလို့ ကျေးဇူး အများကြီး တင်ပါတယ်</li>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section class="wide reveal">
+      <h2 class="long">baby နဲ့ အတူရှိနေရတဲ့ အချိန်တိုင်းက ကို့အတွက် အမှတ်တရတွေပါပဲ</h2>
+      <div class="gallery">
+        <figure class="polaroid" style="--r:-2deg"><img src="images/1.jpg" alt="" loading="lazy"><figcaption>baby က အရမ်းလှတယ်</figcaption></figure>
+        <figure class="polaroid" style="--r:1.5deg"><img src="images/2.jpg" alt="" loading="lazy"><figcaption>ချစ်ကို ပိုင်ဆိုင်ခွင့်ရတာက ကို့အတွက် ကြီးမားတဲ့ လက်ဆောင်ပါပဲ</figcaption></figure>
+        <figure class="polaroid" style="--r:-1deg"><img src="images/3.jpg" alt="" loading="lazy"><figcaption>ကို့အတွက် အမြဲရှိနေပေးလို့ ကျေးဇူးတင်ပါတယ်နော်</figcaption></figure>
+        <figure class="polaroid" style="--r:2deg"><img src="images/4.jpg" alt="" loading="lazy"><figcaption>baby က ကို့အတွက် ပြည့်စုံလွန်းပါတယ်</figcaption></figure>
+        <figure class="polaroid" style="--r:-1.5deg"><img src="images/5.jpg" alt="" loading="lazy"><figcaption>ကို့ကို စောင့်ပေးနေရတာကိုလည်း တောင်းပန်ပါတယ်နော်</figcaption></figure>
+        <figure class="polaroid" style="--r:1deg"><img src="images/6.jpg" alt="" loading="lazy"><figcaption>baby ကို ချစ်လို့တောင် မဝနိုင်ဘူး</figcaption></figure>
+        <figure class="polaroid" style="--r:-2deg"><img src="images/7.jpg" alt="" loading="lazy"><figcaption>ကို ပိုင်ဆိုင်ခွင့်ရတဲ့ ပန်းလေးက ဒီလောက်လှမယ်လို့ မထင်ခဲ့ဘူး</figcaption></figure>
+        <figure class="polaroid" style="--r:1.5deg"><img src="images/8.jpg" alt="" loading="lazy"><figcaption>အရမ်း ပြည့်စုံလွန်းတယ်</figcaption></figure>
+        <figure class="polaroid" style="--r:-1deg"><img src="images/9.jpg" alt="" loading="lazy"><figcaption>အရမ်း ချစ်တယ်</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section class="reveal">
+      <article class="letter">
+        <span class="seal">♥</span>
+        <p>baby ရေ…</p>
+        <p>ချစ်ခဲ့ကြတာ ၇ နှစ်တောင် ပြည့်သွားပြီနော်။ ဒီ ၇ နှစ်လုံး ကို့ဘေးမှာ ရှိနေပေးခဲ့လို့ ကျေးဇူး အများကြီး တင်ပါတယ်။</p>
+        <p>baby နဲ့ အတူတူ နေချင်လှပါပြီ။</p>
+        <p>"ကို ကြိုးစားနေတယ်" လို့ ခဏခဏ ပြောနေရတာကိုလည်း အားနာလှပါပြီ။ ဒါပေမဲ့ ကို တကယ် ကြိုးစားနေပါတယ်။ ကို့ကို ယုံကြည်ပေးပါနော်။</p>
+        <p>နောက်နှစ်တွေမှာတော့ ချစ်သူ နှစ်ပတ်လည်နေ့ မဟုတ်တော့ဘဲ လက်ထပ်ပြီး တစ်နှစ်ပြည့်တဲ့ နေ့လေး ဖြစ်ချင်လှပါပြီ။</p>
+        <p class="big">ချစ်တယ် baby</p>
+        <p class="sign">— baby ကိုပဲ ချစ်တဲ့ ကို</p>
+      </article>
+    </section>
+    <!-- Final question -->
+    <section class="ask reveal">
+      <h2>ချစ်လား?</h2>
+      <div class="ask-btns">
+        <button class="btn-no" id="btnNo" type="button">မချစ်ဘူး</button>
+        <button class="btn-yes" id="btnYes" type="button">ချစ်တယ်</button>
+      </div>
+      <p class="ask-msg" id="askMsg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="beat">♥</span>
+    <p>ချစ်တယ် baby</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox"><img alt="" /></div>
+
+  <!-- Background music: put your song in this folder as music.mp3 -->
+  <audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Music" hidden>
+    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 18.5a2.5 2.5 0 1 1-2-2.45V5.5l11-2v11a2.5 2.5 0 1 1-2-2.45V7.1l-7 1.27z"/></svg>
+  </button>
+
+<script>
+  const my = (n) => String(n).replace(/\d/g, (d) => "၀၁၂၃၄၅၆၇၈၉"[d]);
+
+  // ---- Counter since first date (26 Nov 2019) ----
+  const start = new Date(2019, 10, 26);
+  function tick() {
+    const now = new Date();
+    let years = now.getFullYear() - start.getFullYear();
+    if (now < new Date(now.getFullYear(), 10, 26)) years--;
+    const ms = now - new Date(start.getFullYear() + years, 10, 26);
+    document.getElementById("years").textContent = my(years);
+    document.getElementById("days").textContent = my(Math.floor(ms / 864e5));
+    document.getElementById("hours").textContent = my(Math.floor(ms / 36e5) % 24);
+    document.getElementById("secs").textContent = my(Math.floor(ms / 1e3) % 60);
+  }
+  tick(); setInterval(tick, 1000);
+
+  // Anniversary badge on 26 November
+  const t = new Date();
+  if (t.getMonth() === 10 && t.getDate() === 26) {
+    const b = document.getElementById("anniv");
+    b.textContent = my(t.getFullYear() - 2019) + " နှစ်ပြည့် နှစ်ပတ်လည် မင်္ဂလာပါ";
+    b.hidden = false;
+  }
+
+  // ---- Reveal on scroll ----
+  const io = new IntersectionObserver((es) => es.forEach((e) => {
+    if (e.isIntersecting) { e.target.classList.add("show"); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll(".reveal, .lines li, .polaroid").forEach((el, i) => {
+    if (!el.classList.contains("reveal")) el.style.transitionDelay = (i % 3) * 0.1 + "s";
+    io.observe(el);
+  });
+
+  // ---- Lightbox ----
+  const lb = document.getElementById("lightbox");
+  const openLb = (src) => { lb.querySelector("img").src = src; lb.classList.add("open"); };
+  document.querySelectorAll(".polaroid img").forEach((img) => img.addEventListener("click", () => openLb(img.src)));
+  lb.addEventListener("click", () => lb.classList.remove("open"));
+
+  // ---- 3D photo ring: auto-spins, drag/swipe to turn ----
+  const ring = document.getElementById("ring"), stage = document.getElementById("stage");
+  const items = [...ring.children], step = 360 / items.length;
+  function layoutRing() {
+    const w = items[0].offsetWidth || 140;
+    const radius = Math.round(w / 2 / Math.tan(Math.PI / items.length)) + 24;
+    items.forEach((img, i) => (img.style.transform = `rotateY(${i * step}deg) translateZ(${radius}px)`));
+  }
+  layoutRing(); addEventListener("resize", layoutRing);
+  let angle = 0, vel = 0.07, dragging = false, lastX = 0, moved = 0;
+  stage.addEventListener("pointerdown", (e) => { dragging = true; moved = 0; lastX = e.clientX; stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener("pointermove", (e) => { if (!dragging) return; vel = (e.clientX - lastX) * 0.25; moved += Math.abs(e.clientX - lastX); lastX = e.clientX; });
+  stage.addEventListener("pointerup", (e) => {
+    dragging = false;
+    if (moved < 6) { const el = document.elementFromPoint(e.clientX, e.clientY); if (el && el.parentNode === ring) openLb(el.src); }
+  });
+  (function spin() {
+    if (!dragging) vel += (0.07 - vel) * 0.015;
+    angle += vel;
+    ring.style.transform = `rotateX(-6deg) rotateY(${angle}deg)`;
+    requestAnimationFrame(spin);
+  })();
+
+  // ---- gentle 3D tilt ----
+  document.querySelectorAll(".polaroid, .letter").forEach((el) => {
+    el.addEventListener("pointermove", (e) => {
+      const r = el.getBoundingClientRect();
+      el.style.setProperty("--ry", ((e.clientX - r.left) / r.width - 0.5) * 10 + "deg");
+      el.style.setProperty("--rx", -((e.clientY - r.top) / r.height - 0.5) * 10 + "deg");
+    });
+    el.addEventListener("pointerleave", () => { el.style.setProperty("--rx", "0deg"); el.style.setProperty("--ry", "0deg"); });
+  });
+  // ---- ချစ်လား? : "No" shrinks, "Yes" grows ----
+  const no = document.getElementById("btnNo"), yes = document.getElementById("btnYes"), askMsg = document.getElementById("askMsg");
+  const teases = ["သေချာလား? 🥺", "ပြန်စဉ်းစားပါဦး…", "ကို ငိုတော့မယ်နော် 😢", "ချစ်တယ် ကိုပဲ နှိပ်ပါ baby", "မချစ်ဘူး ခလုတ်လေး ပျောက်တော့မယ် 🙈"];
+  let noS = 1, yesS = 1, tries = 0;
+  no.addEventListener("click", () => {
+    tries++;
+    noS = Math.max(noS * 0.75, 0.25);
+    yesS = Math.min(yesS * 1.22, 2.6);
+    no.style.setProperty("--s", noS);
+    yes.style.setProperty("--s", yesS);
+    askMsg.textContent = teases[Math.min(tries - 1, teases.length - 1)];
+    if (tries >= 6) no.classList.add("gone");
+  });
+  yes.addEventListener("click", () => {
+    askMsg.innerHTML = "ပိုချစ်တယ် ❤️";
+    askMsg.classList.add("yay");
+    no.classList.add("gone");
+    yes.classList.add("chosen"); yes.disabled = true;
+    if (window.heartBurst) {
+      for (let i = 0; i < 8; i++) setTimeout(() => window.heartBurst(Math.random() * innerWidth, innerHeight * (0.3 + Math.random() * 0.6), 9), i * 140);
+    }
+  });
+  // ---- Background music ----
+  const bgm = document.getElementById("bgm"), musicBtn = document.getElementById("musicBtn");
+  let wantMusic = true;
+  function fadeIn() {
+    bgm.volume = 0;
+    const t = setInterval(() => { bgm.volume = Math.min(0.7, bgm.volume + 0.05); if (bgm.volume >= 0.7) clearInterval(t); }, 120);
+  }
+  function play() { return bgm.play().then(() => { fadeIn(); musicBtn.classList.add("on"); }).catch(() => {}); }
+  bgm.addEventListener("canplay", () => { musicBtn.hidden = false; if (wantMusic && bgm.paused) play(); }, { once: true });
+  bgm.addEventListener("error", () => (musicBtn.hidden = true)); // no music.mp3 → no button
+  // phones only allow sound after a tap, so start on her first touch
+  addEventListener("pointerdown", function first(e) {
+    if (e.target.closest("#musicBtn")) return;
+    removeEventListener("pointerdown", first);
+    if (wantMusic && bgm.paused) play();
+  });
+  musicBtn.addEventListener("click", () => {
+    if (bgm.paused) { wantMusic = true; play(); }
+    else { wantMusic = false; bgm.pause(); musicBtn.classList.remove("on"); }
+  });
+</script>
+<script src="floaty.js"></script>
+</body>
+</html>
